@@ -40,6 +40,7 @@ public class Battleship {
 		Scanner choice = new Scanner(System.in);
 		int choixMatch = choice.nextInt();
 		String namePlayer1 = null;
+		String namePlayer2 = null;
 
 
 		System.out.println("A 'M' on the grid means Miss (miss shot), an 'H' means Hit (hit shot)");
@@ -60,9 +61,9 @@ public class Battleship {
 					if(i==0)
 					{
 					System.out.print("Player 2, enter your name : ");
-					namePlayer1 = name.nextLine();
+					namePlayer2 = name.nextLine();
 					}
-					player2 = new Human(namePlayer1);
+					player2 = new Human(namePlayer2);
 				}
 
 				else if (choixMatch == 2) {
